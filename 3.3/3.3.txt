@@ -1,0 +1,5 @@
+exercice 3.3
+
+Non car si le prix actuel = 100:
+1) nouveau prix = 90
+2) nouveau prix = 80
