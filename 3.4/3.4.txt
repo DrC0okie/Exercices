@@ -1,0 +1,75 @@
+//1)
+
+if (prixActuel >= 100) { 
+   nouveauPrix = prixActuel - 20; 
+   cout << "Nouveau prix = " << nouveauPrix << endl; 
+} else { 
+   nouveauPrix = prixActuel - 10; 
+   cout << "Nouveau prix = " << nouveauPrix << endl; 
+}
+
+//On doit de toute manière faire l'instruction cout. Il faut donc la sortir du if
+
+//----------------------------------------------------------------------------------------
+//2)
+
+if (prixActuel < 100) { 
+   nouveauPrix = prixActuel - 10; 
+} else if (prixActuel = 100) { 
+   nouveauPrix = prixActuel; 
+} else { 
+   nouveauPrix = prixActuel + 10; 
+}
+
+//dans le "else if (prixActuel = 100)" on fait une affectation, pas une comparaison!
+//Il faut utiliser "==" à la place de "="
+
+//----------------------------------------------------------------------------------------
+//3) 
+
+if (prixActuel < 100) { 
+   nouveauPrix = prixActuel - 10; 
+} else if (prixActuel >= 100 && prixActuel <= 150) { 
+   nouveauPrix = prixActuel - 15; 
+} else { 
+   nouveauPrix = prixActuel - 20; 
+}
+
+//"prixActuel >= 100" est inutile. il suffit de mettre "if(prixActuel <= 150)" dans la 2e boucle
+
+//----------------------------------------------------------------------------------------
+//4)
+
+if (prixActuel < 100) { 
+   nouveauPrix = prixActuel - 10; 
+} else if (prixActuel >= 100) { 
+   nouveauPrix = prixActuel - 20; 
+} 
+
+//La deuxième boucle if est inutile
+ 
+//----------------------------------------------------------------------------------------
+//5)
+
+if (prixActuel >= 100) { 
+   droitAuRabais = true; 
+} else { 
+   droitAuRabais = false; 
+} 
+
+//Il suffit de mettre "droitAuRabais = prixActuel >= 100;"
+ 
+//----------------------------------------------------------------------------------------
+//6)
+
+if (prixActuel >= 100) { 
+   pourcentRabais = 5;  
+} else if (prixActuel > 500) { 
+   pourcentRabais = 10;  
+} else if (prixActuel > 1000) { 
+   pourcentRabais = 15;  
+} else { 
+   pourcentRabais = 0;  
+}
+
+//Inverser l'ordre des boucles => du plus stricte au moins stricte
