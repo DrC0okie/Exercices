@@ -40,10 +40,3 @@ int main()
 	
 	getchar();
 }
-
-/*
-compte = 10'000.-
-taux intéret = 6%
-500 de moin s chaque mois
-for 
-(10000*0.06) - 500*/

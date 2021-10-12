@@ -21,10 +21,10 @@ string displayCosts(double costCar, double costTrain)
 {
 	string message;
 	message.append("Cost car: ");
-	message.append(costCar);
+	message.append(to_string(costCar));
 	message.append("\n");
 	message.append("Cost train: ");
-	message.append(costTrain);
+	message.append(to_string(costTrain));
 	return message;
 }
 
