@@ -1,0 +1,74 @@
+//Que va afficher à l'exécution chacun des groupes d'instructions ci-dessous ? 
+
+//1)
+int i = 0; 
+while (i - 10) { 
+   i += 2; cout << i << " "; 
+} 
+
+//Réponse : 2 4 6 8 10
+ 
+//2)
+int i = 0; 
+while (i - 10) 
+   i += 2; cout << i << " "; 
+ 
+//Réponse : 10
+
+//3)
+int i = 0; 
+while (i < 11) { 
+   i += 2; cout << i << " "; 
+} 
+ 
+//Réponse : 2 4 6 8 10 12
+
+//4)
+int i = 11; 
+while (i--) { 
+   cout << i-- << " "; 
+} 
+ 
+//Réponse : 10 8 6 4 2 0 -2 .... infini
+//Note:i-- retourne d'abord la valeur précédent, puis la décrémente après
+
+//5)
+int i = 12; 
+while (i--) { 
+   cout << --i << " "; 
+} 
+ 
+//Réponse: 10 8 6 4 2 0
+//Note: i vaut -1 après la dernière boucle
+
+//6)
+int i = 0; 
+while (i++ < 10) { 
+   cout << i-- << " "; 
+} 
+
+//Réponse : 1 1 1 1 1 .....infini
+//Note:
+
+7)
+int i = 1; 
+while (i <= 5) { 
+   cout << 2 * i++ << " "; 
+} 
+
+//Réponse : 2 4 6 8 10
+//Note:
+ 
+//8)
+int i = 1; 
+while (i != 9) { 
+   cout << (i = i + 2) << " "; 
+}
+
+//Réponse : 3 5 7 9
+
+
+// Notes:
+// Pour int 1 = 2
+// while(i--) => la boucle testera la valeur 2 et la décrémentera après
+// while(--i) => la valeur sera décrémentée et la boucle testera la valeur 1

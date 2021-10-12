@@ -1,0 +1,33 @@
+//1)
+if (j == 0)
+{ 
+   b = true; 
+} 
+else 
+{ 
+   if (i / j < k) 
+   { 
+      b = false; 
+   } 
+   else
+   { 
+      b = true; 
+   } 
+} 
+
+//Réponse:
+ b = j == 0 || i/j >= k;
+
+ 
+//2)
+if (i < 1)
+{ 
+   b = true; 
+}
+else 
+{ 
+   b = i > 2; 
+}
+
+//Réponse:
+b = i < 1 || i > 2;
