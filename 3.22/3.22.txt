@@ -1,0 +1,7 @@
+1) 10 boucles
+2) 10 boucles
+3) 10 boucles
+4) 21 boucles
+5) INT_MAX -10 boucles
+6) 11 boucles
+7) 7 boucles
