@@ -30,7 +30,7 @@ int main() {
 } 
 
 // Note: dans le cas d'opérateurs logique &&, ||, les opérateurs unaires ++x et x++ ne sont pas prioritaires.
-//"A : i = 3 j = 2 k = 3"
+//"A : i = 3 j = 2 k = 1"
 //"B : i = 4 j = 2 k = 1" // j ne va pas changer à cause du court-circuit, k vaut 1 car true
 //"C : i = 4 j = 3 k = 1" // k = 1 car true
 //"D : i = 4 j = 2 k = 0" // j ne va pas être évalué à cause du court-circuit

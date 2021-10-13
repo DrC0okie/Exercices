@@ -2,6 +2,6 @@
 2) 10 boucles
 3) 10 boucles
 4) 21 boucles
-5) INT_MAX -10 boucles
+5) INT_MAX -9 boucles (2'147'483'638 boucles)
 6) 11 boucles
 7) 7 boucles

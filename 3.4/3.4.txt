@@ -46,7 +46,7 @@ if (prixActuel < 100) {
    nouveauPrix = prixActuel - 20; 
 } 
 
-//La deuxième boucle if est inutile
+//La deuxième boucle if est inutile, il suffit de mettre un else
  
 //----------------------------------------------------------------------------------------
 //5)
