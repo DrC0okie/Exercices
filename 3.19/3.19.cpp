@@ -1,7 +1,9 @@
-// File:           VanHove_Labo11_3.19.cpp
-// Author:         Timothee Van Hove
-// Date:           15.10.2021
-// Description:    Outputs the number of year after which the initial amount has doubled
+// File:        VanHove_Labo11_3.19.cpp
+// Author:      Timothee Van Hove
+// Date:        15.10.2021
+// Description: Outputs the number of year after which the initial amount has doubled
+// Compiler:    g++ 11.2.0
+// Options:     -std=c++20 -Wall -Wextra -Wconversion -Wsign-conversion -Wvla -pedantic
 
 #include <iostream>
 #include <cstdlib>
@@ -22,13 +24,13 @@ int main()
     cin >> initialAmount >> interestRate;
 
     int nbYears = 0;
-    double interest = 0.0, newAmount = initialAmount;
+    double newAmount = initialAmount;
 
     // Calulate the number of year the amout will double
     while( initialAmount * DOUBLE_AMOUNT > newAmount)
     {
         // Get the interest amount
-        interest = newAmount * interestRate / PERCENT;
+        double interest = newAmount * interestRate / PERCENT;
 
         // Get the new amount
         newAmount += interest;
