@@ -1,0 +1,4 @@
+les fonctions doivent etre déclarées avant le main
+la fonction main doit avoir des parenthèses
+la fonction g il manque le type dans le 2e paramètre
+la fonction h il y a un ";" à la place d'une virgule dans les paramètres

@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+
+bool operation(double num1, double num2, char operateur, double& resultat);
+int main()
+{
+	double resultat, num1, num2;
+	char operateur;
+	
+	cout << "Entrer 2 valeurs et une opération (+, -, *, /)";
+	cin >> num1 >> num2 >> operateur;
+	
+	if(operation(num1, num2, operateur, resultat))
+		cout << "Le résultat est : " << resultat;
+	
+	else cout << "Erreur lors de la saisie de l'opérateur";
+}
+
+bool operation(double num1, double num2, char operateur, double& resultat)
+{
+	switch (operateur)
+	{
+		case '+':
+			resultat = num1 + num2;
+			return true;
+		case '-':
+			resultat = num1 - num2;
+			return true;
+		case '*':
+			resultat = num1 * num2;
+			return true;
+		case '/':
+			resultat = num1 / num2;
+			return true;
+		default: return false;
+	}
+}

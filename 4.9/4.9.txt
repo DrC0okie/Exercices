@@ -1,0 +1,20 @@
+
+double retrait(double& solde, double montant);
+int main()
+{
+unsigned solde = 500, montantSouhaité = 300, montantFinal;
+
+montantFinal = retrait(solde, montantSouhaité);
+
+cout << "Montant retiré = " << montantFinal << endl;
+}
+
+double retrait(double& solde, double montant)
+{
+	if(solde < montant )
+		montant = solde;
+		
+		solde = solde - montant;
+		
+	return montant;	
+}

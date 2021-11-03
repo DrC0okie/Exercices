@@ -1,0 +1,44 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+void f(double x);
+void g(double &x);
+void h(const double &x);
+
+int main(){
+
+    const int C = 1;
+    int n = C;
+    double x = C;
+
+    f(C); // Correct x = 2
+    f(n); // Correct x = 2
+    f(x); // Correct x = 2
+    g(C); // Impossible de stocker une valeur dans une constante
+    g(n); // Impossible de stocker une valeur dans une constante
+    g(x); // Correct x = 2
+    h(C); // Appel de la fonction est correct (x = 1, si on enlève x = x + 1; dans h())
+    h(n); // Appel de la fonction est correct (x = 1, si on enlève x = x + 1; dans h())
+    h(x); // Appel de la fonction est correct (x = 2, si on enlève x = x + 1; dans h())
+
+    return EXIT_SUCCESS;
+}
+
+void f(double x)
+{// Correct
+    x = x + 1;
+    cout << "x = " << x << endl;
+}
+
+void g(double &x)
+{// Correct
+    x = x + 1;
+    cout << "x = " << x << endl;
+}
+
+void h(const double &x)
+{
+    x = x + 1; // Faux, on ne peut pas changer le valeur d'une constante
+    cout << "x = " << x << endl;
+}

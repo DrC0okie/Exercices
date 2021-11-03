@@ -1,0 +1,5 @@
+1) avec 0 ça va donner "A\nB"
+2) Avec 1 ça va donner "B"
+3) Avec 4 ça va donner "C\nD"
+4) Avec 6 ça va donner "D"
+5) Avec -1 ça va donner "D"

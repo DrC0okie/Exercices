@@ -1,0 +1,11 @@
+1) Faux juste une valeur
+2) Faux juste une valeur
+3) Vrai, on peut la mettre ou on veut
+4) Faux On peut mettre n'importe quoi
+5) Faux, on ne peux mettre que des constantes
+6) Faux, pas besoin, on peut tout mettre à la suite si on veux
+7) Faux, on peut comparer avec n'importe quelle valeur
+8) Vrai
+9) Faux, une seule et unique valeur
+10) Non, car on doit connaître à l'avance les valeurs constantes de la variable
+11) Oui
