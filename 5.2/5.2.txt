@@ -1,0 +1,3 @@
+1)	int myArray[5]; | int myArray[]{0,0,0,0,0}; | int myArray[5]{0,0,0,0,0};
+2)	int myArray[] {1,2,3,4,5}; | int myArray[5]{1,2,3,4,5};
+3)	bool myArray[5]{1,0,0,0,0} | bool myArray[]{true,false,false,false,false} | bool myArray[5]{true};
