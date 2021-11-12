@@ -61,11 +61,7 @@ void deleteCenter(int array[], size_t &size)
 void display(const int array[], size_t size)
 {
     for (size_t i = 0; i < size; i++)
-    {
-        if (array[i] != 0)
-            cout << "[" << array[i] << "] ";
-        else
-            cout << "[]";
-    }
+        cout << "[" << array[i] << "] ";
+
     cout << endl;
 }

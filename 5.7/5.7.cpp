@@ -1,6 +1,7 @@
 // File:        5.7.cpp
 // Author:      Timothee Van Hove
 // Date:        10.11.2021
+// Description: Exercise 5.7 "Remplacement de valeurs par une valeur donnée"
 // Compiler:    g++ 11.2.0
 // Options:     -std=c++20 -Wall -Wextra -Wconversion -Wsign-conversion -Wvla -pedantic
 
@@ -50,11 +51,7 @@ void replaceEven(int array[], size_t size, int value)
 void display(const int array[], size_t size)
 {
     for (size_t i = 0; i < size; i++)
-    {
-        if (array[i] != 0)
-            cout << "[" << array[i] << "] ";
-        else
-            cout << "[] ";
-    }
+        cout << "[" << array[i] << "] ";
+
     cout << endl;
 }

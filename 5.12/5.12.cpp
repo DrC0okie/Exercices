@@ -10,7 +10,7 @@
 using namespace std;
 
 void display(const int array[], size_t size);
-void deleteValue(int array[], size_t &size, int value);
+void deleteDouble(int array[], size_t &size, int value);
 
 int main()
 {
@@ -32,8 +32,8 @@ int main()
     cout << "Please enter a value you want to remove frome the array : ";
     cin >> value;
 
-    deleteValue(array1, size1, value);
-    deleteValue(array2, size2, value);
+    deleteDouble(array1, size1, value);
+    deleteDouble(array2, size2, value);
 
     cout << "Result of the deletion :" << endl;
     display(array1, size1);
@@ -44,7 +44,7 @@ int main()
  * @param array The array
  * @param size The size of the array
  * @param value The value to delete*/
-void deleteValue(int array[], size_t &size, int value)
+void deleteDouble(int array[], size_t &size, int value)
 {
     for (size_t i = 0; i < size; i++)
         if (array[i] == value)
@@ -64,11 +64,7 @@ void deleteValue(int array[], size_t &size, int value)
 void display(const int array[], size_t size)
 {
     for (size_t i = 0; i < size; i++)
-    {
-        if (array[i] != 0)
-            cout << "[" << array[i] << "] ";
-        else
-            cout << "[]";
-    }
+        cout << "[" << array[i] << "] ";
+
     cout << endl;
 }

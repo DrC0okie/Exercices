@@ -1,6 +1,7 @@
 // File:        5.5.cpp
 // Author:      Timothee Van Hove
 // Date:        10.11.2021
+// Description: Exercise 5.5 "Moyennes de notes"
 // Compiler:    g++ 11.2.0
 // Options:     -std=c++20 -Wall -Wextra -Wconversion -Wsign-conversion -Wvla -pedantic
 
