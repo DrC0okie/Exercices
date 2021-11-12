@@ -29,11 +29,13 @@ void permutation(int array[], size_t size)
     array[size - 1] = tmp;
 }
 
+/**  @brief Display the content of an array
+ * @param array The array
+ * @param size The size of the array*/
 void display(const int array[], size_t size)
 {
     for (size_t i = 0; i < size; i++)
     {
-
         if (array[i] != 0)
             cout << "[" << array[i] << "] ";
         else
